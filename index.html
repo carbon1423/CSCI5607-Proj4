@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homework 4 Presentation — Carson Bockenhauer</title>
+  <style>
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: #1D2E28;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    code {
+      color: #cdd2ce;
+      font-size: 1;
+    }
+    strong {
+      color: cdd2ce;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      color: #cdd2ce;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .wrap {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #18392B;
+      border-radius: 10px;
+      border: 1px solid #14452F;
+    }
+    .meta {
+      color: #adb2ae;
+      font-size: 0.9rem;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #cdd2ce;
+      text-align: center;
+    }
+    .notes {
+      font-size: 0.95rem;
+      margin-top: 2px;
+      line-height: 1.25;
+      color: #adb2ae;
+    }
+    .screenshot-row {
+      display: flex;
+      justify-content: center; 
+      gap: 20px;               
+      margin-top: 10px;
+    }
+    
+    .screenshot-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;  
+    }
+    
+    .screenshot-row img {
+      max-width: 500px;
+      max-height: 500px;
+      border: 1px solid #14452F;
+      border-radius: 10px;
+    }
+    
+    .screenshot-footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #adb2ae;
+      margin-top: 6px;   
+    }
+    
+    .zip-link {
+      display: inline-block;
+      justify-content: center;
+      margin-top: 0px;
+      padding: 8px 12px;
+      background: #1D2E28;
+      color: #0A5Caf;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .zip-link-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>Project 4 Presentation</h1>
+        <div class="meta">By: Carson Bockenhauer</div>
+      </div>
+      <div class="meta" style="text-align: right;">
+        Course: CSCI 5607<br/>
+        Date: November 21 2025
+      </div>
+    </header>
+    <section>
+      <div class="section-title">Files Included</div>
+      <ul class="notes">
+        <li><strong>Proj4-Resources.zip — ZIP: </strong> Containing source code, and a working executable. There is also a folder for reference images. Along with all the textures</li>
+        <li><strong>Executable OS:</strong> Built on Ubuntu 24.04.3 LTS</li>
+        <li><strong>Build steps:</strong>  <code>g++ -g $(pkg-config --cflags sdl3) main.cpp glad/glad.c -o app $(pkg-config --libs sdl3) -lGL -ldl</code></li>
+        <li><strong>Use:</strong> run with <code>./app (or ./app debug)</code></li>
+      </ul>
+      <div class="zip-link-container">
+        <a class="zip-link" href="./Proj4-Resources.zip" download>
+          Download Proj4-Resources.zip
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">Images</div>
+        <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/gameplay1.gif" alt="gameplay.gif">
+          <footer class="screenshot-footer"> Full Level Gameplay
+          </footer>
+        </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block"> 
+          <img src="./Images/Game-composed-screenshot1.png" alt="Game-composed-screenshot.png">
+          <footer class="screenshot-footer"> "How am I Gonna Get Through Here?"
+          </footer>
+        </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/game-photo-2.png" alt="game-photo-2.png">
+          <footer class="screenshot-footer"> "Multiple Ghosts Ahead"
+          </footer>
+        </div>
+      </div>
+        <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/game-photo-3.png" alt="game-photo-3.png">
+          <footer class="screenshot-footer"> Gameplay Screenshot
+          </footer>
+        </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/scene-photo.png" alt="scene-photo.png">
+          <footer class="screenshot-footer"> Map Design
+          </footer>
+        </div>
+
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/writeup1.png" alt="writeup1.png">
+          <footer class="screenshot-footer"> Map From Writeup
+          </footer>
+        </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/NormalMap.png" alt="NormalMap.png">
+          <footer class="screenshot-footer"> Wall normal map
+          </footer>
+        </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/woodNorm.png" alt="woodNorm.png">
+          <footer class="screenshot-footer"> Floor normal map
+          </footer>
+        </div>
+      </div>
+      <div class="screenshot-row">
+        <div class="screenshot-block">
+          <img src="./Images/door_normal.png" alt="door_normal.png">
+          <footer class="screenshot-footer"> Door normal map
+          </footer>
+        </div>
+      </div>
+    
+    </section>
+    <section>
+      <div class="section-title">Description of Video and Images</div>
+      <div class="notes">
+        <li>In the gif I play through a full level, with a map I designed. Immediately you can see the flashlight (spotlight) that I implemented. Next you see me grabbing the red key, and shooting the first enemy. I enter the yellow door and find the purple key. Then I shoot the next enemy and find the cyan key and shoot one enemy. I let the last hit me to show how I implemented player health (The red squares represent 5 health, I go down to 4 after that). Then I reach the goal tile (green cube). 
+        </li>
+        <li>
+          In the next image I have one of my "artistic" images "How am I Gonna Get Through Here?" It showcases my flashlight and a feature I implemented in a debug mode hiding the UI. Since I was in debug mode I had more control over the ambient color and made things a bit brighter.
+        </li>
+        <li>
+          In "Multiple Ghosts Ahead" I showcase more enemies guarding the goal, you can also notice the normal maps I implemented on the walls and ground.
+        </li>
+        <li>
+          The fourth image is from regular gameplay. You can see the UI, health and cross hair. Again you can see the beautiful normal map on the walls :)
+        </li>
+        <li>
+          The fifth image is from the debug mode I implemented where you see a top down view of the map I play in the video.
+        </li>
+        <li>
+          The final image is from the write up showcasing a simple scene with walls, a door, a key and a goal.
+        </li>
+        <li>The last 3 images are the normal maps I use for walls, floors and doors</li>
+      </div>
+      <div class="section-title">Features List</div>
+      <div class="notes">
+        Here are the features I implemented for base marks:
+        <li>Continuous movement showcased in the gameplay gif</li>
+        <li>Walls and Doors showcased in the gameplay gif</li>
+        <li>User input using "WASD" and a mouse you can control the character, showcased in the gameplay gif</li>
+        <li>Collision detection of walls and doors showcased in the gameplay gif</li>
+        <li>Floor showcased in the images and in the gamplay gif</li>
+        <li>Ambient and Spotlight lighting showcased in the gif</li>
+        <li>Multiple maps showcased in the last two images</li>
+        <li>Walls, Floors, Doors, and Ghosts all have textures</li>
+        <li>Flashlight</li>
+        <li>Normal maps on walls, floors, and doors</li>
+        Here are the Features I would like to contribute to extra credit
+        <li> Enemies that interact with the environment (damage player)</li>
+        <li>Shooting the enemies</li>
+        <li>Images 1, 2, and 3 as submissions to the art contest</li>
+      </div>
+      <div class="section-title">Implementation Process</div>
+      <div class="notes">
+        This project has been so fun! I finally got to implement some of the game design features I learn about in my free time, such as tilemapping and pathfinding. <br>
+        As a general overview I first got a cube rendering, then wrote a function to define the positions of the cubes based on the map file. From there I worked on making the floor. After I had a basic map rendering and simple camera movement, I implemented collisions based on cube postions and a set player size. From there I was able to implement textures. I then implemented doors, and keys which was just like the map but adjusting what happens when you collide. <br>
+        After getting the base requirements implemented I worked on the flashlight, enemies, shooting, normal maps, and mouse movement. The flashlight was just like implementing the flashlight in the ray tracer. If we are inside the light contribute full lighting otherwise just ambient light. Enemies was similar to doors and keys, but I then had to calculate the distance to the player from each tile using a BFS. Then the enemies march to the next lowest tile every 2 seconds. Shooting was also similar, if we shoot march a ray out in the camera's direction and check what it hits. Normal maps gave me the most trouble, simply because I was forgetting about the tangent and bitangents. After I found resources for that though it was pretty straight forward, make a height map, and then I used an online normal map tool. Mouse movement also gave me a bit of trouble, but in reality my issue was because I was using a trackpad and not a real mouse so when I would press a key I could not move the mouse as well.
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
